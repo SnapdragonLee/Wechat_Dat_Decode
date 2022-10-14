@@ -33,8 +33,8 @@ int main(int argc, char *argv[]) {
         if (!flag) {
             coder = check_coder(buf[0], buf[1]);
             coder_extend =
-                    (coder << 56) + (coder << 48) + (coder << 40) + (coder << 32) + (coder << 24) + (coder << 16) +
-                    (coder << 8) + coder;
+                    (coder << 56) || (coder << 48) || (coder << 40) || (coder << 32) || (coder << 24) || (coder << 16) ||
+                    (coder << 8) || coder;
             flag = 1;
         }
 
