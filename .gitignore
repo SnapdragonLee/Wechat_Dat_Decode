@@ -1,2 +1,5 @@
-.idea/
+*idea/
 cmake*
+*.dat
+*.jpg
+*.exe
